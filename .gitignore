@@ -1,0 +1,58 @@
+# Ignore everything by default
+*
+
+# Keep the gitignore itself
+!.gitignore
+
+# Keep folder structure
+!RSoC_Labs/
+!RSoC_Labs/**/
+
+# Keep useful HDL source files
+!RSoC_Labs/**/*.vhd
+!RSoC_Labs/**/*.vhdl
+
+# Keep C/C++ source files written for the labs
+!RSoC_Labs/**/*.c
+!RSoC_Labs/**/*.h
+!RSoC_Labs/**/*.cc
+!RSoC_Labs/**/*.cpp
+
+# Keep constraints and Vivado project/script files
+!RSoC_Labs/**/*.xdc
+!RSoC_Labs/**/*.xpr
+!RSoC_Labs/**/*.tcl
+
+# Keep memory/waveform initialisation files
+!RSoC_Labs/**/*.coe
+!RSoC_Labs/**/*.mem
+!RSoC_Labs/**/*.hex
+!RSoC_Labs/**/*.mif
+
+# Keep MATLAB and Python analysis scripts
+!RSoC_Labs/**/*.m
+!RSoC_Labs/**/*.py
+
+# Keep documentation
+!RSoC_Labs/**/*.txt
+!RSoC_Labs/**/*.md
+!RSoC_Labs/**/*.pdf
+!RSoC_Labs/**/*.docx
+!RSoC_Labs/**/*.png
+!RSoC_Labs/**/*.jpg
+!RSoC_Labs/**/*.jpeg
+
+# Still block common generated Vivado/SDK folders even if folder structure is allowed
+RSoC_Labs/**/.Xil/
+RSoC_Labs/**/*.cache/
+RSoC_Labs/**/*.hw/
+RSoC_Labs/**/*.ip_user_files/
+RSoC_Labs/**/*.runs/
+RSoC_Labs/**/*.sim/
+RSoC_Labs/**/*.gen/
+RSoC_Labs/**/xsim.dir/
+RSoC_Labs/**/*.sdk/
+RSoC_Labs/**/Debug/
+RSoC_Labs/**/Release/
+RSoC_Labs/**/_system/
+RSoC_Labs/**/.metadata/
